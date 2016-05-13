@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Личный сайт студента GeekBrains</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+
+
+function Quest1(){
+
+	var answer1 = document.getElementById('puzzle1').value;
+
+		var goodAnswer = 0;
+		if(answer1.toLowerCase() == "земляника"){
+			alert('Правильно!');
+			goodAnswer++;
+		}
+		if(goodAnswer == 0){
+			alert('Вы ничего не угадали');
+		}
+}
+
+function Quest2(){
+
+	var answer2 = document.getElementById('puzzle2').value;
+
+	    var goodAnswer = 0;
+		if(answer2.toLowerCase() == "черника"){
+		    alert('Правильно!');
+		    goodAnswer++;
+	    }
+		if(goodAnswer == 0){
+			alert('Вы ничего не угадали');
+		}
+
+		
+}
+
+function trueAnswer() {
+
+   alert('земляника и черника')
+    }
+
+</script>>
+
+
+</head>
+<body>
+
+<div id="tooplate_body_wrapper" />
+<div id="tooplate_wrapper" />
+<div id="tooplate_header">
+	<div id="site_title">
+		<h1><a href="http://geekbrains.ru">GeekBrains</a></h1>
+	</div>
+	<div id="tooplate_menu">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="puzzle.html">Загадки</a></li>
+			<li><a href="guess.html">Угадайка</a></li>
+			<li><a href="guessMulti.html">Угадайка Мультиплеер</a></li>
+		</ul>    	
+	</div>
+</div>
+    
+<div id="content_box">
+		
+	<div id="content_title">
+		<h2>Игра в загадки</h2>
+	</div>
+	<div id="content">
+		
+		<h3>Отгадай загадки!</h3>  
+
+		<p>Ягодку сорвать легко —
+       Ведь растет невысоко.<p/>
+        <p> Под листочки загляни-ка —
+       Там созрела...<p/>
+		<input type="text" id="puzzle1" />
+		<input type="button" value="Ответить" onClick="Quest1()"/>
+		</br></br></br>
+		
+		<p>Много темно-синих бус
+        Кто-то уронил на куст.<p/>
+        <p>Их в лукошко собери-ка.
+        Эти бусины <p/>
+		<input type="text" id="puzzle2" />
+        <input type="button" value="Ответить" onClick="Quest2()"/>
+		</br></br></br>
+
+		<input type="button" value="Показать правильные ответы" onClick="trueAnswer()"/>
+	</div>
+           
+    <div id="tooplate_footer">    
+        Copyright © 2016 <a href="http://geekbrains.ru">GeekBrains</a>
+    </div>
+    
+</div> <!-- end of warpper -->
+
+</body>
+</html>

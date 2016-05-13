@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Личный сайт студента GeekBrains</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+
+
+function Gss1(){
+
+	var answer1 = document.getElementById('guess1').value;
+
+    var usAnswer = Math.floor(Math.random() * 100) + 1;
+    if((usAnswer >= 1) && (usAnswer <= 100)) {
+
+	    if(usAnswer == answer1){ 
+		    alert('Вы угадали! Поздравляю!!!');
+	    } else if(usAnswer > answer1){
+		    alert('Не угадал. Твое число слишком маленькое');
+	    } else if(usAnswer < answer1){
+		    alert('Не угадал Твое число слишком большое');
+	    }
+    } 
+    else {
+	alert('Ну я же просил число от 1 до 100!!!');
+    }
+
+}
+
+function Gss2(){
+
+	var answer2 = document.getElementById('guess2').value;
+
+    var usAnswer2 = Math.floor(Math.random() * 100) + 1;
+    if((usAnswer2 >= 1) && (usAnswer2 <= 100)) {
+
+	    if(usAnswer2 == answer2){ 
+		    alert('Вы угадали! Поздравляю!!!');
+	    } else if(usAnswer2 > answer2){
+		    alert('Не угадал. Твое число слишком маленькое');
+	    } else if(usAnswer2 < answer2){
+		    alert('Не угадал Твое число слишком большое');
+	    }
+    } 
+    else {
+	alert('Ну я же просил число от 1 до 100!!!');
+    }
+
+}
+</script>>
+
+
+</head>
+<body>
+
+<div id="tooplate_body_wrapper" />
+<div id="tooplate_wrapper" />
+<div id="tooplate_header">
+	<div id="site_title">
+		<h1><a href="http://geekbrains.ru">GeekBrains</a></h1>
+	</div>
+	<div id="tooplate_menu">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="puzzle.html">Загадки</a></li>
+			<li><a href="guess.html">Угадайка</a></li>
+			<li><a href="guessMulti.html">Угадайка Мультиплеер</a></li>
+		</ul>    	
+	</div>
+</div>
+    
+<div id="content_box">
+		
+	<div id="content_title">
+		<h2>Игра "Угадайка"</h2>
+	</div>
+	<div id="content">
+		
+		<h3>Мы загадали число от 1 до 100, попытайся отгадать, если не слабо:) Подключай друга!!!</h3>  
+            <a>Игрок 1, введи число в поле</a>
+            </br>
+			<input type="text" id="guess1" />
+
+		<input type="button" value="Ответить" onClick="Gss1()"/>
+            </br>
+		  <a>Игрок2, введите число в поле</a>
+            </br>
+			<input type="text" id="guess2" />
+
+		<input type="button" value="Ответить" onClick="Gss2()"/>
+	</div>
+           
+    <div id="tooplate_footer">    
+        Copyright © 2016 <a href="http://geekbrains.ru">GeekBrains</a>
+    </div>
+    
+</div> <!-- end of warpper -->
+
+</body>
+</html>
